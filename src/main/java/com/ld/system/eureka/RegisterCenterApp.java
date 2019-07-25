@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * @author 王海龙
  */
 @EnableEurekaServer
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.ld.system.eureka")
 public class RegisterCenterApp {
     public static void main(String[] args) {
         SpringApplication.run(RegisterCenterApp.class, args);

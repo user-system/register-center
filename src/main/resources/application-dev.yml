@@ -1,0 +1,15 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://admin:sanhaoadmin@${eureka.instance.hostname}:40000/eureka/,http://admin:sanhaoadmin@${eureka.instance.hostname}:40001/eureka/
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    ip-address: true
+spring:
+  security:
+    user:
+      name: admin
+      password: sanhaoadmin

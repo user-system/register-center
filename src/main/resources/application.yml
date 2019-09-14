@@ -5,3 +5,5 @@ spring:
     name: register-center
   profiles:
     active: test
+
+  // 742815a2e0f42f5e57075851d98113af2ae98807
